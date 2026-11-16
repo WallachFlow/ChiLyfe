@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chilyfe · Experience the real Chicago like a local</title>
+<meta name="description" content="Tell us your vibe and get a free, personalized underground Chicago itinerary in your inbox: food, nightlife, history and culture.">
+<meta property="og:title" content="Chilyfe · Experience the real Chicago like a local">
+<meta property="og:description" content="Skip the tourist traps. Get a free underground Chicago itinerary built around your vibe.">
+<meta name="theme-color" content="#14233a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23c8102e' d='M12 0l3.1 6.6L22.4 6l-4.2 6 4.2 6-7.3-.6L12 24l-3.1-6.6-7.3.6 4.2-6-4.2-6 7.3.6z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#14233a; --muted:#566376; --blue:#41b6e6; --red:#c8102e; --line:#d5dde6; --paper:#fbfcfd; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.5 Archivo,Helvetica,Arial,sans-serif; }
+  .bar { height:14px; background:var(--blue); }
+  .wrap { max-width:1120px; margin:auto; padding:48px 24px 72px; display:grid; grid-template-columns:1fr minmax(0,520px); gap:64px; align-items:start; }
+  .intro { position:sticky; top:48px; }
+  .brand { font-weight:800; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--red); }
+  .brand span { color:var(--muted); font-weight:600; letter-spacing:.06em; margin-left:6px; }
+  h1 { font-size:clamp(44px,6.6vw,80px); line-height:.95; font-weight:800; font-stretch:80%; margin:18px 0 0; }
+  .stars { display:flex; gap:10px; margin:26px 0; }
+  .stars svg { width:30px; height:30px; fill:var(--red); }
+  .points { list-style:none; margin:0; padding:0; }
+  .points li { padding:14px 0; border-top:1px solid var(--line); font-size:18px; }
+  .points li:last-child { border-bottom:1px solid var(--line); }
+  .points b { display:block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--red); margin-bottom:2px; }
+  .cta { display:inline-block; margin-top:28px; background:var(--red); color:#fff; text-decoration:none; font-weight:700; font-size:18px; padding:16px 26px; border-radius:6px; transition:transform .15s; }
+  .cta:hover { transform:translateY(-2px); }
+  .cta:focus-visible { outline:3px solid var(--blue); outline-offset:3px; }
+
+  .card { background:#fff; border:1px solid var(--line); border-top:6px solid var(--blue); border-radius:8px; padding:30px 30px 18px; scroll-margin-top:16px; }
+  h2 { font-size:30px; line-height:1.1; font-stretch:85%; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 16px; font-size:16px; }
+  .card iframe { display:block; width:100%; min-height:420px; border:0; }
+  .fallback { font-size:15px; color:var(--muted); }
+  .fallback a { color:var(--red); font-weight:700; }
+  footer { text-align:center; font-size:13px; color:var(--muted); padding:18px 16px; }
+
+  @media (max-width:860px) {
+    .wrap { grid-template-columns:1fr; gap:36px; padding:28px 16px 48px; }
+    .intro { position:static; }
+    .stars { margin:20px 0; }
+    .stars svg { width:24px; height:24px; }
+    .points li { font-size:17px; }
+    .cta { display:block; text-align:center; }
+    .card { padding:22px 16px 10px; }
+    h2 { font-size:26px; }
+  }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .cta { transition:none; } }
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<main class="wrap">
+  <section class="intro">
+    <div class="brand">Chilyfe <span>Underground Chicago</span></div>
+    <h1>Experience the real Chicago like a local.</h1>
+    <div class="stars" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path id="s" d="M12 0l3.1 6.6L22.4 6l-4.2 6 4.2 6-7.3-.6L12 24l-3.1-6.6-7.3.6 4.2-6-4.2-6 7.3.6z"/></svg>
+      <svg viewBox="0 0 24 24"><use href="#s"/></svg>
+      <svg viewBox="0 0 24 24"><use href="#s"/></svg>
+      <svg viewBox="0 0 24 24"><use href="#s"/></svg>
+    </div>
+    <ul class="points">
+      <li><b>The problem</b>Every Chicago list sends you to the same tourist traps.</li>
+      <li><b>The fix</b>Tell us your vibe, and we'll build your underground itinerary: food, nightlife, history, culture.</li>
+      <li><b>What you get</b>A personalized plan in your inbox, free, so you can explore like you've lived here for years.</li>
+    </ul>
+    <a class="cta" href="#get-itinerary">Get My Free Itinerary →</a>
+  </section>
+
+  <section class="card" id="get-itinerary" aria-labelledby="form-title">
+    <h2 id="form-title">Tell us your vibe.</h2>
+    <iframe data-tally-src="https://tally.so/embed/Z9o765?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="520" title="Chilyfe itinerary form"></iframe>
+    <noscript><p class="fallback">The form needs JavaScript. <a href="https://tally.so/r/Z9o765">Open it here</a>.</p></noscript>
+  </section>
+</main>
+<footer>Chilyfe · Made in Chicago</footer>
+<div class="bar"></div>
+
+<script>
+  // Tally's standard embed loader.
+  var d = document, w = "https://tally.so/widgets/embed.js", v = function () {
+    "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) { e.src = e.dataset.tallySrc; });
+  };
+  if ("undefined" != typeof Tally) v();
+  else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w; s.onload = v; s.onerror = v; d.body.appendChild(s); }
+</script>
+</body>
+</html>
